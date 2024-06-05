@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Pan Tadeusz</title>
+</head>
+<body>
+    <div class = "menu">
+        <h1>Menu</h1>
+        <div class="button-container">
+            <a href="{{url_for('index')}}" class="button">Strona główna</a>
+            <a href="{{url_for('ksiega1')}}" class="button">Księga 1</a>
+            <a href="{{url_for('ksiega2')}}" class="button">Księga 2</a>
+            <a href="{{url_for('ksiega3')}}" class="button">Księga 3</a>
+            <a href="{{url_for('ksiega4')}}" class="button">Księga 4</a>
+            <a href="{{url_for('ksiega5')}}" class="button">Księga 5</a>
+            <a href="{{url_for('ksiega6')}}" class="button">Księga 6</a>
+            <a href="{{url_for('ksiega7')}}" class="button">Księga 7</a>
+            <a href="{{url_for('ksiega8')}}" class="button">Księga 8</a>
+            <a href="{{url_for('ksiega9')}}" class="button">Księga 9</a>
+            <a href="{{url_for('ksiega10')}}" class="button">Księga 10</a>
+            <a href="{{url_for('ksiega11')}}" class="button">Księga 11</a>
+            <a href="{{url_for('ksiega12')}}" class="button">Księga 12</a>
+        </div>
+    </div>
+    <div class="section">
+    <section>
+        {% block title %}
+        {% endblock title %}
+        {% block content %}
+            <p>To jest plik bazowy.</p>
+        {% endblock content %}
+    </section>
+    </div>
+    <footer>
+        <p>Wiktoria Wezgraj, Uniwersytet Ekonomiczny w Krakowie</p>
+    </footer>
+</body>
+</html>
